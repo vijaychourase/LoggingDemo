@@ -19,6 +19,7 @@ public class LoggingAndAuditingFilters implements Filter {
 
 	private static Logger logger = LogManager.getLogger(LoggingAndAuditingFilters.class);
 	private FilterConfig filterConfig = null;
+	// add more new method
 	/**
 	 * Default constructor.
 	 */
