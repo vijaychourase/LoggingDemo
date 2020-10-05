@@ -40,10 +40,9 @@ public class LoggingAndAuditingFilters implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-		
+	
 		String remoteAddress = request.getRemoteAddr();
 		String protocol = request.getProtocol();
-
 		chain.doFilter(request, response);
 		filterConfig.getServletContext().log("Logging Filter Servlet called");
 		filterConfig.getServletContext().log("**************************");
@@ -52,9 +51,7 @@ public class LoggingAndAuditingFilters implements Filter {
 		filterConfig.getServletContext().log("Updated logger filter");
 		filterConfig.getServletContext().log("more updateds");
 		filterConfig.getServletContext().log("more more updateds");
-		
-		
-		
+
 	}
 
 	/**
