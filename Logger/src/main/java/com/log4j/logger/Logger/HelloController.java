@@ -25,6 +25,8 @@ public class HelloController {
 		logger.fatal("fatal logger!");
 		logger.trace("trace logger!");
 		
+		System.out.println("update the class !!!");
+		
 
 		return "Hello World";
 	}
