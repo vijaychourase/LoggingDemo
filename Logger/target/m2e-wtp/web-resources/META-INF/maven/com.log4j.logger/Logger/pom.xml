@@ -35,7 +35,7 @@
 			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
-
+	<!-- ADDING MORE COMMENTS LINE -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
