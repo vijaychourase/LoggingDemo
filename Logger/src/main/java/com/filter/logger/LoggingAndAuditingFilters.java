@@ -51,6 +51,8 @@ public class LoggingAndAuditingFilters implements Filter {
 		filterConfig.getServletContext().log("Protocal" + protocol);
 		filterConfig.getServletContext().log("Updated logger filter");
 		filterConfig.getServletContext().log("more updateds");
+		filterConfig.getServletContext().log("more more updateds");
+		
 		
 		
 	}
