@@ -50,6 +50,8 @@ public class LoggingAndAuditingFilters implements Filter {
 		filterConfig.getServletContext().log("IP addresss" + remoteAddress);
 		filterConfig.getServletContext().log("Protocal" + protocol);
 		filterConfig.getServletContext().log("Updated logger filter");
+		filterConfig.getServletContext().log("more updateds");
+		
 		
 	}
 
