@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="log-path">C:/Users/Lenovo/Downloads/wildfly-20.0.0.Final/wildfly-20.0.0.Final/standalone/log/</Property>
+		<Property name ="log-path1">E:/Application-logs/Green field/</Property>
+		<Property name ="log-path2">E:/Application-logs/kenya/</Property>
+	</Properties>
+	<Appenders>
+
+		<!-- console appender -->
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c{1}:%L - %msg%n" />
+		</Console>
+
+		<!-- file appender -->
+		<RollingFile name="info-log"
+			fileName="${log-path}/info.log"
+			filePattern="${log-path}/info-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5p %c{1}:%L - %msg%n">
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="debug-log"
+			fileName="${log-path1}/debug.log"
+			filePattern="${log-path1}/debug-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern ="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5p %c{1}:%L - %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="error-log" fileName="${log-path2}/error.log" filePattern="${log-path2}/error-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5p %c{1}:%L - %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.log4j.logger.Logger" level="debug" additivity="false">
+			<appender-ref ref="debug-log" level="debug" />
+			<appender-ref ref="info-log" level="info" />
+			<appender-ref ref="error-log" level="error" />
+		</Logger>
+		<Logger name="com.log4j.logger.Logger" level="info" additivity="false">
+			<appender-ref ref="debug-log" level="debug" />
+			<appender-ref ref="info-log" level="info" />
+			<appender-ref ref="error-log" level="error" />
+		</Logger>
+		<Logger name="com.log4j.logger.Logger" level="error" additivity="false">
+			<appender-ref ref="debug-log" level="debug" />
+			<appender-ref ref="info-log" level="info" />
+			<appender-ref ref="error-log" level="error" />
+		</Logger>
+		<Root level="all">
+			<AppenderRef ref="console-log" />
+		</Root>
+	</Loggers>
+</Configuration>
