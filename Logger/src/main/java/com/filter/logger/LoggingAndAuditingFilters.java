@@ -19,12 +19,11 @@ public class LoggingAndAuditingFilters implements Filter {
 
 	private static Logger logger = LogManager.getLogger(LoggingAndAuditingFilters.class);
 	private FilterConfig filterConfig = null;
-
 	/**
 	 * Default constructor.
 	 */
 	public LoggingAndAuditingFilters() {
-
+		System.out.println("Constructor called......");
 	}
 
 	/**
