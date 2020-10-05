@@ -18,6 +18,7 @@ public class HelloController {
 
 	@GET
 	public String sayHello() {
+		logger.info("updates info logger by ishs")
 		logger.info("info logger!");
 		logger.warn("warning logger!");
 		logger.error("error logger!");
