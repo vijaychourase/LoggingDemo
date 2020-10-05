@@ -26,6 +26,9 @@ public class HelloController {
 		logger.trace("trace logger!");
 		
 		System.out.println("update the class !!!");
+		System.out.println("more update the class !!!");
+		System.out.println(" again more update the class !!!");
+		System.out.println(" again and again more update the class !!!");
 		
 
 		return "Hello World";
