@@ -40,7 +40,6 @@ public class LoggingAndAuditingFilters implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-	
 		String remoteAddress = request.getRemoteAddr();
 		String protocol = request.getProtocol();
 		chain.doFilter(request, response);
@@ -52,8 +51,7 @@ public class LoggingAndAuditingFilters implements Filter {
 		filterConfig.getServletContext().log("more updateds");
 		filterConfig.getServletContext().log("more more updateds");
 
-		//new comments line
-
+		// new comments line
 
 	}
 
