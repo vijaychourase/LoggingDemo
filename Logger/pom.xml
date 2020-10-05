@@ -33,6 +33,7 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.5</version>
 		</dependency>
+		<!-- adding comments-->
 	</dependencies>
 	<build>
 		<finalName>Logger</finalName>
