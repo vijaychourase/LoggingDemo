@@ -8,6 +8,7 @@
 	<artifactId>Logger</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<!-- Log4j2 project configuration -->
 	<properties>
 		<maven.compiler.target>11</maven.compiler.target>
 		<version.wildfly>19.1.0.Final</version.wildfly>

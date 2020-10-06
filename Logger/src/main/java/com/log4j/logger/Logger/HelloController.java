@@ -18,6 +18,7 @@ public class HelloController {
 
 	@GET
 	public String sayHello() {
+		logger.info("updates info logger")
 		logger.info("info logger!");
 		logger.warn("warning logger!");
 		logger.error("error logger!");
@@ -29,7 +30,7 @@ public class HelloController {
 		System.out.println("more update the class !!!");
 		System.out.println(" again more update the class !!!");
 		System.out.println(" again and again more update the class !!!");
-		
+		System.out.println(" more sysout added")
 
 		return "Hello World";
 	}
