@@ -20,6 +20,6 @@
   </filter>
   <filter-mapping>
     <filter-name>LoggingAndAuditingFilters</filter-name>
-    <url-pattern>/data/hello</url-pattern>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
 </web-app>
