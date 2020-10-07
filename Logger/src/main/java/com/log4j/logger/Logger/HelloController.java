@@ -33,7 +33,8 @@ public class HelloController {
 		System.out.println(" more sysout added");
 		
 		System.out.println("Git Demo example");
-		System.out.println("Programmer-1 updated")
+		System.out.println("Programmer-1 updated");
+		System.out.println("programmer-01 update more");
 		return "Hello World";
 	}
 }
